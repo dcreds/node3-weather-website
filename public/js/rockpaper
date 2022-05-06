@@ -1,0 +1,57 @@
+var rock= {
+    name:'rock',
+    paper: 'lose',
+    scissors: 'win',
+    rock: 'draw',
+    spock: 'lose',
+    lizard: 'draw'
+}
+var scissors = {
+    name:'scissors',
+    paper: 'win',
+    rock: 'lose',
+    scissors: 'draw'
+}
+let paper = {
+    name:'paper',
+    paper: 'draw',
+    rock: 'win',
+    scissors: 'lose'
+}
+paper.name = 'not paper'
+console.log(paper)
+
+var randomNum = Math.ceil(Math.random()*3)
+var chosenObj1 = {}
+var chosenObj2 = ''
+
+var randomNum2 = Math.ceil(Math.random()*3)
+
+
+if(randomNum==1){
+    chosenObj1 = rock
+}else if(randomNum==2){
+chosenObj1 = scissors
+}else{
+    chosenObj1 = paper
+}
+switch (randomNum2) {
+    case 1:
+        chosenObj2 = 'rock'
+        break;
+    case 2:
+        chosenObj2 = 'scissors'
+        break;
+    case 3:
+        chosenObj2 = 'paper'
+        break;
+
+    default:
+        break;
+}
+
+// console.log(chosenObj1.name,chosenObj2.name)
+
+// Object.values(chosenObj1).forEach(val => if (val))
+
+console.log("You "+chosenObj1[chosenObj2])
