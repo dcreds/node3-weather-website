@@ -31,7 +31,7 @@ fetch("/weather?address="+location).then((response)=>{
         }
         message1.textContent = (data.location)
         console.log(data.forecast)
-        message2.textContent = "It's currently "+(data.forecast.currentTemp)+" degrees celsius and it feels like " + data.forecast.feelsLike + " degrees celsius."
+        message2.textContent = "It's currently "+(data.forecast.currentTemp)+" degrees celsius and it feels like " + data.forecast.feelsLike + " degrees celsius.  The uv index is " + data.forecast.UV_index
     })
 })
 
